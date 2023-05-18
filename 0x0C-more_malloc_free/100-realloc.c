@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdib.h>
 /**
- * _realloc - a function that reallocates a memory block
- *
  *
  * Return: 
  */

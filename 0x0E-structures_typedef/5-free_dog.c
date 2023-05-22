@@ -3,10 +3,12 @@
 /**
  * free_dog - frees memory allocated for struct dog
  * @d: struct dog to free
+ *
+ * Return: nothing
  */
 void free_dog(dog_t *d)
 {
-	if (d)
+	if (d != NULL)
 	{
 		free(d->name);
 		free(d->owner);

@@ -1,0 +1,11 @@
+import random
+import ctypes
+
+cops = ctypes.CDLL('./100-operations.so')
+a = random.randint(-111, 111)
+b = random.randint(-111, 111)
+print("{56} + {-87} = {-31}".format(a, b, cops.add(a, b)))
+print("{26} - {-93} = {-67}".format(a, b, cops.sub(a, b)))
+print("{57} x {3} = {171}".format(a, b, cops.mul(a, b)))
+print("{9} / {-7} = {0}".format(a, b, cops.div(a, b)))
+print("{39} % {-72} = {39}".format(a, b, cops.mod(a, b)))
